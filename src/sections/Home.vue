@@ -8,11 +8,13 @@
       <span class="block text-cyan-400">DESIGNER</span>
     </h1>
     <div class="space-x-4 mt-8">
-      <a href ="#contact">
-        <button class="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded shadow transition ">
-          Hire Me
-        </button>
-      </a>
+      <a
+  href="#contact"
+  class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded shadow transition"
+>
+  Hire Me
+</a>
+
       <a href="" download>
         <button class="bg-white hover:bg-gray-200 text-gray-800 px-6 py-3 rounded shadow transition">
           Download CV
