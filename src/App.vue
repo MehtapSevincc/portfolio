@@ -1,4 +1,5 @@
 <script setup>
+import Header from './components/Header.vue'
 import Home from './components/Home.vue'
 import About from './sections/About.vue'
 import Projects from './sections/Projects.vue'
@@ -8,9 +9,9 @@ import Contact from './sections/Contact.vue'
 </script>
 
 <template>
+  <Header/>
   <div class="scroll-smooth bg-gray-800">
     <Home />
-
 
     <section id="about" class="min-h-screen">
       <About />
