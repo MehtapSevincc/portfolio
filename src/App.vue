@@ -13,16 +13,16 @@ import Contact from './sections/Contact.vue'
   <main class="scroll-smooth bg-gray-800">
     <Home />
 
-    <section id="about" class="min-h-screen">
+
       <About />
-    </section>
-<Divider/>
-    <section id="projects" class="min-h-screen">
+    
+    <Divider/>
+   
       <Projects /> 
-    </section>
-<Divider/>
-    <section id="contact" class="min-h-screen">
+   
+    <Divider/>
+    
       <Contact />
-    </section>
+   
   </main>
 </template>
