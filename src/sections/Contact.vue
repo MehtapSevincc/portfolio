@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-start pt-24 px-4">
+  <div id ="contact" class=" min-h-screen flex flex-col items-center justify-start pt-24 px-4">
    <h1 class="text-4xl md:text-6xl font-bold leading-tight text-white mb-12">
       Contact Me
     </h1>
