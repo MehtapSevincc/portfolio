@@ -1,7 +1,8 @@
 <template>
+
  <hr class="border-t border-gray-700" />
 
-  <section class=" min-h-screen flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20">
+  <section id="home" class=" min-h-screen flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20">
   <div class="md:w-1/2 text-center md:text-left">
     <h1 class="text-4xl md:text-6xl font-bold leading-tight">
       <span class="block text-white">CREATIVE UI</span>
@@ -22,4 +23,6 @@
     </div>
   </div>
   </section>
+  <div class="absolute top-0 left-1/3 transform -translate-x-1/2 h-screen w-px bg-gray-500"></div>
+  
 </template>

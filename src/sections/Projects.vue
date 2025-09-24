@@ -1,5 +1,6 @@
 <template>
-    <section class="flex flex-col items-center justify-start py-24 px-4 ">
+ 
+    <section id="projects" class=" min-h-screen flex flex-col items-center justify-start py-24 px-4 ">
   <div class="mb-16 text-center">
     <h1 class="text-4xl md:text-5xl font-bold leading-tight">
       <span class=" text-white">My Recent </span>
@@ -36,7 +37,6 @@
     <img src="/public/pokemon.png" alt="Pokemon Finder" class="rounded-md mb-4 object-cover hover:opacity-80 w-full h-40" />
 </a>
 </div>
-
 
 </div>
   </section>

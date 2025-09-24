@@ -1,5 +1,6 @@
 <template>
-    <section class=" min-h-screen flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20">
+  
+    <section id="about" class=" min-h-screen flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20">
 
   <div class="md:w-1/2 text-center md:text-left">
     <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
@@ -13,4 +14,5 @@
 </div>
 
 </section>
+
 </template>
