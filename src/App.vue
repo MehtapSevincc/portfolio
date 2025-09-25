@@ -2,7 +2,7 @@
 import Divider from './components/Divider.vue'
 import Header from './components/Header.vue'
 import Home from './sections/Home.vue'
-import About from './sections/About.vue'
+import Skill from './sections/Skills.vue'
 import Projects from './sections/Projects.vue'
 import Contact from './sections/Contact.vue'
 
@@ -12,9 +12,8 @@ import Contact from './sections/Contact.vue'
   <Header/>
   <main class="scroll-smooth bg-gray-800">
     <Home />
-
-
-      <About />
+    
+      <Skill />
     
     <Divider/>
    
