@@ -24,7 +24,13 @@
     <div class="md:w-2/3 text-center md:text-left mt-10 md:mt-0">
 
     <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
- 
+      <div class="flex justify-center md:justify-start">
+  <img
+    src="/public/pp.jpeg"
+    alt="Profile"
+    class="w-40 h-40 rounded-full border-4 border-cyan-400 shadow-lg object-cover"
+  />
+</div>
       <span class=" text-white">About </span>
       <span class=" text-cyan-400">Me</span>
     </h1>
