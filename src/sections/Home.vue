@@ -34,9 +34,8 @@
       <span class=" text-white">About </span>
       <span class=" text-cyan-400">Me</span>
     </h1>
-    <p class="text-white text-2xl">I'm studying Computer Engineering and currently doing an internship. I enjoy learning new things.</p>
+    <p class="text-white text-2xl">Hi, I'm Mehtap Sevinç. I'm studying Computer Engineering and currently doing an internship. I enjoy working on frontend development and creating clean,user-friendly interfaces.</p>
   </div>
 
-  </section>
-  
+  </section> 
 </template>
