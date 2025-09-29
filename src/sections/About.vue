@@ -1,26 +1,21 @@
-<script setup>
-const skills =["HTML","CSS","JavaScript","VueJS","Pinia","Github","Tailwind"];
-</script>
+  
+ <template> 
+ <section class="min-h-screen px-10 md:px-20 py-20 flex flex-col md:flex-row items-center justify-between gap-12 relative">
+    <div class="absolute top-0 h-full w-px bg-slate-700 opacity-90 ml-[323px]"></div>
 
+    <div class="md:w-1/2 max-w-[323px] text-center md:text-left">
 
-<template> 
-    <section id="skills" class=" min-h-screen flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20">
-    <div class="md:w-1/2">
-      <h2 class="text-4xl font-bold mb-6">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8 -mt-60 ">
 
-      <span class=" text-white">My </span>
-      <span class=" text-cyan-400">Skills</span>
-       </h2>
-<div class=" grid grid-cols-2 sm:grid-cols-3 gap-4">
-  <div v-for="(skill,index) in skills"
-  :key ="index"
-  class="bg-white text-gray-800 px-4 py-2 rounded shadow text-center font-semibold">
-  {{ skill }}
-</div>
-</div>
- </div>
-<div class="md:w-[90%] flex justify-center">
-    <img src="/public/resim.png" alt="photo" class="w-full max-w-[600px]" />
-</div>
-</section>
-</template>
+      <span class=" text-white">About </span>
+      <span class=" text-cyan-400">Me</span>
+    </h1>
+    <p class="text-white text-xl mr-5">Hi, I'm Mehtap Sevinç. I'm studying Computer Engineering and currently doing an internship. I enjoy working on frontend development and creating clean,user-friendly interfaces.</p>
+  </div>
+  <div class="md:w-1/2 relative flex flex-col items-center gap-8">
+    <img src="/public/items.png" class="w-full md:w-[800px]  max-w-full mb-8"/>
+    <img src="/public/group2.png" class="w-72 md:w-80 absolute top-64" />
+    
+  </div>
+  </section>
+  </template>
