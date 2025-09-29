@@ -3,12 +3,19 @@ import Email from '../components/Email.vue'
 </script>
 
 <template>
-    <section id="contact" class="min-h-screen flex flex-col items-center justify-start pt-24 px-4">
-        <h1 class="text-4xl font-bold  mb-12">
-            <span class="text-white">Got a project in</span>
-            <span class="text-cyan-400"> mind?</span>
+    <section id="contact" class=" relative min-h-screen flex flex-col items-start justify-start pt-32 ml-20 ">
+        <div class="absolute top-0 h-full w-px bg-slate-700 opacity-90 left-[390px]"></div>
+  
+        <h1 class="text-6xl font-bold text-left mt-8 mb-12">
+            <span class=" block text-white">Got a project in</span>
+            <span class="block text-cyan-400"> mind?</span>
         </h1>
-        <Email/>
-      
+        <div class="flex flex-col md:flex-row itemst-start justify-between gap-48  ">
+        <img src="/public/group3.png" class="ml-48"/>
+       <div class="flex-1 w-[500px] ">
+       <Email/>
+       </div>
+       </div>
     </section>
+
 </template>
