@@ -15,7 +15,7 @@ import Contact from './sections/Contact.vue'
     
       <About />
     
-    <Divider/>
+   <Divider class="-mt-16"/>
    
       <Projects /> 
    

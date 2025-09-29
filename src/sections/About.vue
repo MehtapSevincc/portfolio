@@ -11,11 +11,13 @@
       <span class=" text-cyan-400">Me</span>
     </h1>
     <p class="text-white text-xl mr-5">Hi, I'm Mehtap Sevinç. I'm studying Computer Engineering and currently doing an internship. I enjoy working on frontend development and creating clean,user-friendly interfaces.</p>
+    <img src="/public/vector2.png" class="mt-16 ml-24"/>
   </div>
   <div class="md:w-1/2 relative flex flex-col items-center gap-8">
     <img src="/public/items.png" class="w-full md:w-[800px]  max-w-full mb-8"/>
-    <img src="/public/group2.png" class="w-72 md:w-80 absolute top-64" />
+    <img src="/public/group2.png" class="w-72 md:w-80 absolute top-56" />
     
   </div>
+  
   </section>
   </template>
