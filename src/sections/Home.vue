@@ -1,15 +1,18 @@
 <template>
- <hr class="border-t border-gray-700" />
+
   <section id="home" class=" min-h-screen flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20">
   <div class="md:w-1/3 text-center md:text-left mb-10 md:mb-0">
     <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-      <span class="block text-white">CREATIVE UI</span>
-      <span class="block text-cyan-400">DESIGNER</span>
+      <span class="block text-white ml-8">CREATIVE UI</span>
+      <span class="block text-cyan-400 ml-8">DESIGNER</span>
     </h1>
+   
+      <img src="/public/vector.png" class="absolute w-8 md:w-16 left-0 top-16 transform -rotate-35 mt-60 ml-9 h-40">
+   
     <div class="space-x-4 mt-8 flex justify-center md:justify-start">
       <a
   href="#contact"
-  class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded shadow transition"
+  class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded shadow transition ml-8"
 >
   Hire Me
 </a>
@@ -20,22 +23,6 @@
       </a>
     </div>
   </div>
-   <div class="absolute top-0 left-1/3 transform -translate-x-1/2 h-screen w-px bg-gray-500"></div>
-    <div class="md:w-2/3 text-center md:text-left mt-10 md:mt-0">
-
-    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
-      <div class="flex justify-center md:justify-start">
-  <img
-    src="/public/pp.jpeg"
-    alt="Profile"
-    class="w-40 h-40 rounded-full border-4 border-cyan-400 shadow-lg object-cover"
-  />
-</div>
-      <span class=" text-white">About </span>
-      <span class=" text-cyan-400">Me</span>
-    </h1>
-    <p class="text-white text-2xl">Hi, I'm Mehtap Sevinç. I'm studying Computer Engineering and currently doing an internship. I enjoy working on frontend development and creating clean,user-friendly interfaces.</p>
-  </div>
-
+ 
   </section> 
 </template>
