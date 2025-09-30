@@ -1,7 +1,6 @@
 <template>
- 
-    <section id="projects" class=" min-h-screen flex flex-col items-center justify-start py-24 px-4 ">
-  <div class="mb-16 text-center">
+    <section id="projects" class=" min-h-screen flex flex-col items-center justify-start py-24 px-4  bg-[url('/items.png')] bg-repeat bg-[length:33.3%_33.3%] max-w-full">
+  <div class="mb-16 text-left w-full ml-[590px]">
     <h1 class="text-4xl md:text-5xl font-bold leading-tight">
       <span class=" text-white">My Recent </span>
       <span class=" text-cyan-400">Works</span>
@@ -23,7 +22,6 @@
   />
 </a>
 
-    
 </div>
 <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-md hover:shadow-lg transition p-6 aspect-square flex flex-col justify-between">
     <h3 class="text-xl font-semibold mb-2 text-cyan-500">Weather App</h3>
