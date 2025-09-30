@@ -1,6 +1,7 @@
 <script setup>
 import Divider from './components/Divider.vue'
 import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 import Home from './sections/Home.vue'
 import About from './sections/About.vue'
 import Projects from './sections/Projects.vue'
@@ -22,6 +23,6 @@ import Contact from './sections/Contact.vue'
     <Divider/>
     
       <Contact />
-   
+   <Footer />
   </main>
 </template>
