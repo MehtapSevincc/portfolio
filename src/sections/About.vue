@@ -1,7 +1,7 @@
-  
+
  <template> 
- <section class="min-h-screen px-10 md:px-20 py-20 flex flex-col md:flex-row items-center justify-between gap-12 relative">
-    <div class="absolute top-0 h-full w-px bg-slate-700 opacity-90 ml-[323px]"></div>
+ <section class=" min-h-screen px-10 md:px-20 py-20 flex flex-col md:flex-row items-center justify-between gap-12 relative">
+ 
 
     <div class="md:w-1/2 max-w-[323px] text-center md:text-left">
 

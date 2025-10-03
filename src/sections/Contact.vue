@@ -4,7 +4,7 @@ import Email from '../components/Email.vue'
 
 <template>
     <section id="contact" class=" relative min-h-screen flex flex-col items-start justify-start pt-32 ml-20 ">
-        <div class="absolute top-0 h-full w-px bg-slate-700 opacity-90 left-[350px]"></div>
+       
   
         <h1 class="text-6xl font-bold text-left mt-8 mb-12">
             <span class=" block text-white">Got a project in</span>
