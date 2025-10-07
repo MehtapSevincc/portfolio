@@ -12,25 +12,30 @@ import Contact from "./sections/Contact.vue";
 <template>
   <Header />
   <main class="scroll-smooth bg-gray-800">
-    <section class="relative">
+    <section id="home" class="relative">
       <VerticalLine />
       <Home />
     </section>
-    <section class="relative">
+
+    <section id="about" class="relative">
       <VerticalLine />
       <About />
     </section>
 
     <Divider class="-mt-16" />
 
-    <Projects />
+    <section id="projects" class="relative">
+      <Projects />
+    </section>
 
     <Divider />
-    <section class="relative">
+
+    <section id="contact" class="relative">
       <VerticalLine />
       <Contact />
     </section>
-    <section class="relative">
+
+    <section id="footer" class="relative">
       <VerticalLine />
       <Footer />
     </section>

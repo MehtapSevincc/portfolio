@@ -4,13 +4,38 @@ import { onMounted, onUnmounted } from "vue";
 let sections, navLinks;
 
 const handleScroll = () => {
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 120;
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
+  const scrollY = window.scrollY;
+  const headerHeight = document.querySelector("header")?.offsetHeight || 100;
+
+  const sectionPositions = Array.from(sections).map((section) => {
+    const top = section.offsetTop - headerHeight;
+    const bottom = top + section.offsetHeight;
+    return {
+      id: section.getAttribute("id"),
+      top,
+      bottom,
+    };
   });
+
+  let current = "";
+
+  const homeSection = sectionPositions.find((s) => s.id === "home");
+  const aboutSection = sectionPositions.find((s) => s.id === "about");
+
+  const homeEnd = aboutSection
+    ? aboutSection.top + aboutSection.bottom - aboutSection.top
+    : homeSection.bottom;
+
+  if (scrollY < homeEnd) {
+    current = "home";
+  } else {
+    for (const section of sectionPositions) {
+      if (scrollY >= section.top && scrollY < section.bottom) {
+        current = section.id;
+        break;
+      }
+    }
+  }
 
   navLinks.forEach((link) => {
     link.classList.remove("active");
@@ -24,6 +49,7 @@ onMounted(() => {
   sections = document.querySelectorAll("section");
   navLinks = document.querySelectorAll(".nav-link");
   window.addEventListener("scroll", handleScroll);
+  handleScroll();
 });
 
 onUnmounted(() => {
