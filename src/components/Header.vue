@@ -1,18 +1,18 @@
 <script setup>
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted } from "vue";
 
 let sections, navLinks;
 
 const handleScroll = () => {
   let current = "";
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const sectionTop = section.offsetTop - 120;
     if (window.scrollY >= sectionTop) {
       current = section.getAttribute("id");
     }
   });
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.classList.remove("active");
     if (link.getAttribute("href") === `#${current}`) {
       link.classList.add("active");
@@ -31,17 +31,17 @@ onUnmounted(() => {
 });
 </script>
 
-
 <template>
-      <header class=" bg-gray-800 top-0 left-0 w-full shadow border-b border-gray-700 z-50 fixed">
-        <div class="flex justify-between items-center px-10 py-6">
-    <div class="text-2xl font-bold text-white">Pinpong University</div>
-    <nav class="space-x-6 text-white font-medium">
-       <a href="#home" class="nav-link">Home</a>
-       <a href="#projects" class="nav-link">Projects</a>
-       <a href="#contact" class="nav-link">Contact</a>
-       
-    </nav> 
+  <header
+    class="bg-gray-800 top-0 left-0 w-full shadow border-b border-gray-700 z-50 fixed"
+  >
+    <div class="flex justify-between items-center px-10 py-6">
+      <div class="text-2xl font-bold text-white">Pinpong University</div>
+      <nav class="space-x-6 text-white font-medium">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
     </div>
   </header>
 </template>
