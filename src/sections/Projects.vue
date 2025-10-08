@@ -4,26 +4,26 @@ const activeFilter = ref("all");
 const projects = [
   {
     title: "E-Commerce",
-    category: "web",
+    category: "ux",
     image: "/ecommerce.png",
     link: "https://github.com/MehtapSevincc/e-commerce.git",
   },
   {
     title: "Weather App",
-    category: "web",
+    category: "design",
     image: "/weather.png",
     link: "https://github.com/MehtapSevincc/Weather-App.git",
   },
   {
     title: "Pokemon Finder",
-    category: "web",
+    category: "ui",
     image: "/pokemon.png",
     link: "https://github.com/MehtapSevincc/PokemonFinder.git",
   },
 ];
 const filteredProjects = computed(() => {
   if (activeFilter.value === "all") return projects;
-  return [];
+  return projects.filter(project => project.category === activeFilter.value);
 });
 </script>
 
