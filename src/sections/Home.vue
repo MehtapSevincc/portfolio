@@ -3,7 +3,7 @@
     id="home"
     class="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20"
   >
-    <a href="#projects" aria-label="Scroll Down">
+    <a href="#about" aria-label="Scroll Down">
       <button
         class="w-12 h-12 bg-gray-700 flex items-center justify-center border border-none transition rounded-sm shadow absolute bottom-24 -translate-x-1/2 z-10 ml-[323px] text-white"
         aria-label="Scroll Down"
