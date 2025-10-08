@@ -42,7 +42,7 @@ const sendEmail = () => {
         required
         maxlength="500"
         placeholder=" Email"
-        class="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+        class="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
       />
     </div>
     <div>
@@ -55,7 +55,7 @@ const sendEmail = () => {
         required
         maxlength="5000"
         placeholder=" Message"
-        class="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 resize-none"
+        class="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 resize-none"
       ></textarea>
     </div>
     <div>
