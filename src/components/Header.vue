@@ -17,25 +17,16 @@ const handleScroll = () => {
     };
   });
 
-  let current = "";
+  let current = "home";
 
-  const homeSection = sectionPositions.find((s) => s.id === "home");
-  const aboutSection = sectionPositions.find((s) => s.id === "about");
 
-  const homeEnd = aboutSection
-    ? aboutSection.top + aboutSection.bottom - aboutSection.top
-    : homeSection.bottom;
-
-  if (scrollY < homeEnd) {
-    current = "home";
-  } else {
     for (const section of sectionPositions) {
       if (scrollY >= section.top && scrollY < section.bottom) {
         current = section.id;
         break;
       }
     }
-  }
+  
 
   navLinks.forEach((link) => {
     link.classList.remove("active");
@@ -65,7 +56,7 @@ onUnmounted(() => {
       <div class="text-2xl font-bold text-white">Pinpong University</div>
       <nav class="space-x-6 text-white font-medium">
         <a href="#home" class="nav-link">Home</a>
-        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About Me</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
