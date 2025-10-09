@@ -15,12 +15,14 @@ const sendEmail = () => {
       }
     )
     .then(
-      () => {
+      () => {   if(typeof window !== "undefined"){
         toast.success("Message sent successfully");
+        }
         form.value.reset();
       },
-      (error) => {
+      (error) => {   if(typeof window !== "undefined"){
         toast.error("Failed to send Message");
+      }
         console.error(error);
       }
     );
