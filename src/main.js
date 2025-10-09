@@ -12,5 +12,4 @@ app.use(ToastPlugin, {
     duration :4000,
 });
 
-
 app.mount("#app");
