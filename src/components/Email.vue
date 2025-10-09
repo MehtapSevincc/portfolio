@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import emailjs from "@emailjs/browser";
-
+import {useToast} from 'vue-toast-notification';
+const toast = useToast();
 const form = ref(null);
 const sendEmail = () => {
   emailjs
@@ -15,11 +16,11 @@ const sendEmail = () => {
     )
     .then(
       () => {
-        alert("Message sent successfully");
+        toast.success("Message sent successfully");
         form.value.reset();
       },
       (error) => {
-        alert("Failed to send Message");
+        toast.error("Failed to send Message");
         console.error(error);
       }
     );

@@ -1,6 +1,16 @@
 import { createApp } from "vue";
+import ToastPlugin from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-bootstrap.css';
 import App from "./App.vue";
 import "./assets/base.css";
 import VueScrollTo from "vue-scrollto";
+const app = createApp(App);
 
-createApp(App).use(VueScrollTo).mount("#app");
+app.use(VueScrollTo);
+app.use(ToastPlugin, {
+    position: "bottom-right",
+    duration :4000,
+});
+
+
+app.mount("#app");
